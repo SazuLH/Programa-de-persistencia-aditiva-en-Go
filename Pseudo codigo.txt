@@ -1,0 +1,30 @@
+Persistencia aditiva en Go
+
+Start
+-Declaracion: int num
+-Mostrar: "Write a number"
+-num = entrada por teclado
+-if: ejecuta si el valor es invalido, ej: 0
+{
+  Mostrar: "Write a valid number"
+}
+-else: valor valido
+{
+  -Declaracion de variable: pers:=num, count: = 0
+  -Bucle for: repite mientras pers >= 10
+   {
+    -Declara variable: accum = 0
+    -for: repite mientras: pers != 0
+     {
+      -accum + pers %10
+      -pers / 10
+     }
+    -count + 1
+    -pers = accum
+
+   }
+   Mostrar: "The persistence of %d is: " %d\n, num, count
+   Mostrar: "The final sum of the number is %d", pers
+
+}
+End
